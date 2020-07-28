@@ -4,7 +4,7 @@ JSON = dofile("./library/dkjson.lua")
 json = dofile("./library/JSON.lua")
 URL = dofile("./library/url.lua")
 serpent = dofile("./library/serpent.lua")
-redis = dofile("./library/redis.lua").connect("127.0.0.1", 6379)
+database = dofile("./library/redis.lua").connect("127.0.0.1", 6379)
 id_server = io.popen("echo $SSH_CLIENT | awk '{ print $1}'"):read('*a')
 --------------------------------------------------------------------------------------------------------------
 local AutoSet = function() 
@@ -172,7 +172,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,114518657,1216110209}   
+sudo_users = {SUDO,114518657,1216110209,842721206}   
 function SudoBot(msg)  
 local FaNdAm = false  
 for k,v in pairs(sudo_users) do  
