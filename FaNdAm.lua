@@ -2289,7 +2289,7 @@ Text = [[
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[To talk to us](t.me/Twasel_0bot)
+ ✸∫ ↬[To talk to us](t.me/Tsh0bot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
