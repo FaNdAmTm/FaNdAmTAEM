@@ -2285,13 +2285,11 @@ Text = [[
  ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[Channel FaNdAm](t.me/fandam0) 
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Information](t.me/pvv_v)
+ ✸∫ ↬[Information](t.me/fandam0)
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[DEVELOPER](t.me/CCFRR)
+ ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[The way his inauguration](https://t.me/fandam0/365)
-≪━━━━━━━━━━━━━≫
- ✸∫ ↬[To talk to us](t.me/rriebot)
+ ✸∫ ↬[To talk to us](t.me/Twasel_0bot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
