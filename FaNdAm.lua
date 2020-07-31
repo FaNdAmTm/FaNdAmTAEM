@@ -10118,6 +10118,12 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 --------------------------------
+if text == "هلو" or text == "هلوو" or text == "هلووو" or text == "هلوووو" or text == "هلووووو" or text == "هلوووووو" then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"هله بريحه هلي🤗","هلا بيك 🤗","هله كلبي 💋","هلوات خيو شلونك 😏🤷","هلا تاج راسي 🤷🏼‍♀︄ "}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
 if text == "شلونكك" or text == "شلونك" or text == "شلونكم" or text == "كيفكم" or text == "اخبارك" or text == "اخباركم" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"احسن منك 😂","تمام وانت❤","زين الحمدلله وانت "}
