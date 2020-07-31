@@ -10120,7 +10120,7 @@ end
 --------------------------------
 if text == "شلونكك" or text == "شلونك" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"ي","تمام وانت","حقيره ومنتكبره 😶😂"}
+local texting = {"احسن منك 😂","تمام وانت","زين الحمدلله وانت "}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
