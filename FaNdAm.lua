@@ -10118,7 +10118,7 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 --------------------------------
-if text == "شلونكك" or text == "شلونك" or text == ''شلونكم'' or text == ''كيفكم'' or text == ''اخبارك'' or text == ''اخباركم'' then
+if text == "شلونكك" or text == "شلونك" or text == "شلونكم" or text == "كيفكم" or text == "اخبارك" or text == "اخباركم" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"احسن منك 😂","تمام وانت❤","زين الحمدلله وانت "}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
