@@ -7848,6 +7848,20 @@ end
 return false
 end
 
+if text == ""..(database:get(bot_id..'هلو') or 'فانۨــہدامۘ⁶³').."" then  
+Namebot = (database:get(bot_id..'هلو') or 'فانۨــہدامۘ⁶³')
+local FaNdAm_Msg = {
+'عمغي 🥺💕.',
+'هاا شتريد كافي ☹️.',
+'مشايف بوت شني 😂.',
+'كول حبيبي ؟ اني '..Namebot..'',
+'مشغول حالياً',
+'عمري فداك '..Namebot..' كول حب'
+}
+send(msg.chat_id_, msg.id_,'['..FaNdAm_Msg[math.random(#FaNdAm_Msg)]..']') 
+return false
+end
+
 if text == ""..(database:get(bot_id..'Name:Bot') or 'فانۨــہدامۘ⁶³').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'فانۨــہدامۘ⁶³')
 local FaNdAm_Msg = {
