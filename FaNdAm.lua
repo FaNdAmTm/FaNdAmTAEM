@@ -3362,7 +3362,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 
 
-if text == 'jsuen' and SudoBot(msg) then
+if text == 'الملفات' and SudoBot(msg) then
 t = ' ✸∫ ملفات السورس فانۨــہدامۘ⁶³ ↓\n ≪━━━━━━━━━━━━━≫ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -3373,9 +3373,9 @@ end
 end
 send(msg.chat_id_, msg.id_,t)
 end
-if text == "jsgeتث" or text == 'jsgeت' then
+if text == "المتجر" or text == 'متجر الملفات' then
 if SudoBot(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/FaNdAmTEAM/Files_FaNdAm/master/getfile.json")
+local Get_Files, res = https.request("https://corup.xyz/gitfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -3445,7 +3445,7 @@ send(msg.chat_id_, msg.id_," ✸∫ عذرا الملف لايدعم سورس ف
 end
 return false
 end
-if text == "jwbej" and SudoBot(msg) then
+if text == "مسح الملفات" and SudoBot(msg) then
 os.execute("rm -fr File_Bot/*")
 send(msg.chat_id_,msg.id_," ✸∫ تم مسح الملفات")
 return false
