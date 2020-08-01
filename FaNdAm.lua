@@ -3375,7 +3375,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "المتجر" or text == 'متجر الملفات' then
 if SudoBot(msg) then
-local Get_Files, res = https.request("https://corup.xyz/gitfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/FaNdAmTm/Files-FaNdAm/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
