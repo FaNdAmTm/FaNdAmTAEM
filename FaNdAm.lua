@@ -6982,6 +6982,29 @@ database:setex(bot_id.."Set:Priovate:Group:Link"..msg.chat_id_..""..msg.sender_u
 return false
 end
 end
+if text == "تعطيل الابراج" and Owner(msg) then
+send(msg.chat_id_, msg.id_, '⌯ تم تعطيل الابراج')
+database:set(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_,"close")
+end
+end
+if text == "تفعيل الابراج" and Owner(msg) then
+send(msg.chat_id_, msg.id_,'⌯ تم تفعيل الابراج')
+database:set(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_,"open")
+end
+end
+if text and text:match("^برج (.*)$") and database:get(bot_id.."BLACKBOTSS:brj_Bots"..msg.chat_id_) == "open" then
+local Textbrj = text:match("^برج (.*)$")
+gk = https.request('https://forhassan.ml/Black/br.php?br='..URL.escape(Textbrj)..'')
+br = JSON.decode(gk)
+i = 0
+for k,v in pairs(br.ok) do
+i = i + 1
+t = v.."\n"
+end
+end
+send(msg.chat_id_, msg.id_, t)
+end
+end
 if text == "تفعيل رابط" or text == 'تفعيل الرابط' then
 if Mod(msg) then  
 database:set(bot_id.."Link_Group:status"..msg.chat_id_,true) 
