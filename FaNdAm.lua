@@ -10104,15 +10104,6 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 --------------------------------
-if (text and text == "تعطيل ردود البوت") then 
-send(msg.chat_id_, msg.id_, 'تم تعطيل الردود')
-database:set(bot_id.."Fun_Bots:"..msg.chat_id_,"true")
-end
-if (text and text == "تفعيل ردود البوت") then 
-send(msg.chat_id_, msg.id_, 'تم تفعيل الردود')
-database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
-end
-end
 if text == "كافي" or text == "كافي😒" or text == "ككافي" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"اوك😐","كفكافةة بكلبك😹","ماشي😑"}
@@ -10196,6 +10187,14 @@ if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"مووووووووواححح????","مابوس ولي😌😹","خدك/ج نضيف 😂","البوسه بالف حمبي 🌝💋","خلي يزحفلي وابوسه 🙊😻","كل شويه ابوسه كافي 😏","ماابوسه والله هذا زاحف🦎","محح هاي لحاته صاكه??"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
+end
+if (text and text == "تعطيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم تعطيل الردود')
+database:set(bot_id.."Fun_Bots:"..msg.chat_id_,"true")
+end
+if (text and text == "تفعيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم تفعيل الردود')
+database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
 if text == 'تفعيل الردود' and Manager(msg) then   
 database:del(bot_id..'lock:reply'..msg.chat_id_)  
