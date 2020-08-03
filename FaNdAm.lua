@@ -7433,6 +7433,10 @@ send(msg.chat_id_, msg.id_," ✸∫ تم حفظ قوانين الكروب")
 database:del(bot_id.."Set:Rules:" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end  
 
+elseif text == 'وضع كليشه المطور' and Dev_Storm(msg) then
+redis:set(bot_id..'Storm:GetTexting:DevStorm'..msg.chat_id_..':'..msg.sender_user_id_,true)
+send(msg.chat_id_,msg.id_,'📮┇ ارسل لي الكليشه الان')
+
 if text == 'ضع قوانين' or text == 'وضع قوانين' then 
 if Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
