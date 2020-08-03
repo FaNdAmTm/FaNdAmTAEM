@@ -2289,7 +2289,7 @@ Text = [[
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
  ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[The way his inauguration](https://t.me/fandam0/17)
+ ✸∫ ↬[The way his inauguration](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[To talk to us](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
 ]]
