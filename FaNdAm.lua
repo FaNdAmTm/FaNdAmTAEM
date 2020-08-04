@@ -2283,13 +2283,13 @@ Text = [[
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬FaNdAm TEAM
  ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Channel FaNdAm](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg) 
+ ✸∫ ↬[Channel FaNdAm](t.me/fandam0) 
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Information](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
+ ✸∫ ↬[Information](t.me/fandam0)
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[To talk to us](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
+ ✸∫ ↬[To talk to us](t.me/Tsh0bot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
