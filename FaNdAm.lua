@@ -10122,19 +10122,19 @@ local texting = {"ها  زاحف كمشتك","ازحف بعد ازحف🌚","ش�
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "😒" then
+if text == "😒" or text == "😒😒" or text == "😒😒😒" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"😐 شبيك كالب وجهك ","شبيك وجه دبس😕","شكد نحس 😒"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "احبك" then
+if text == "احبك" or text == "احبج" or text == "احبكك" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" اني اكثر 😍🍃","اموتن على ربك 😍","شكد تحبني ؟ 🌚"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "نعال" then
+if text == "نعال" or text == "نععال" or text == "نعالل" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"بوجهك😂","نعال بخلقتك😒","اكو غيرك نععال 😂"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
@@ -10146,13 +10146,13 @@ local texting = {"لضوج حبيبي 😢❤️🍃"," ليش الحلو ضاي
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "البوت عاوي" then
+if text == "البوت عاوي" or text == "مو خوش بوت" or text == "اطرد البوت" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"اطردك ؟😒","ادفرك ؟😒","انجب لك خايس امعفن😒"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "🌚" then
+if text == "🌚" or text == "🌚🌚" or text == "🌚🌚🌚" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {" منور صخام الجدر 🌚🍃","فديت صخامك 🌚❣","وجه دبس 🌚😂"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
