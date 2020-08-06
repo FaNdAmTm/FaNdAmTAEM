@@ -2283,13 +2283,13 @@ Text = [[
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬FaNdAm TEAM
  ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Channel FaNdAm](t.me/fandam0) 
+ ✸∫ ↬[Channel FaNdAm](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg) 
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Information](t.me/fandam0)
+ ✸∫ ↬[Information](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[To talk to us](t.me/Tsh0bot)
+ ✸∫ ↬[To talk to us](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7855,7 +7855,7 @@ local FaNdAm_Msg = {
 'هاا شتريد كافي ☹️.',
 'مشايف بوت شني 😂.',
 'كول حبيبي ؟ اني '..Namebot..'',
-'مشغول حالياً',
+'مشغولة حاليا 😌',
 'عمري فداك '..Namebot..' كول حب'
 }
 send(msg.chat_id_, msg.id_,'['..FaNdAm_Msg[math.random(#FaNdAm_Msg)]..']') 
@@ -8441,7 +8441,8 @@ return false
 end
 if text == 'بوت' then
 Namebot = (database:get(bot_id..'Name:Bot') or 'فانۨــہدامۘ⁶³')
-send(msg.chat_id_, msg.id_,'اسمي الكيوت ['..Namebot..'] ')
+send(msg.chat_id_, msg.id_,'- أنــا لا احتـاج الى سنـد أنــا اسندكم جميعكـم ، وأسنـد نفسـي ولا أهتــز ✟
+🐸💔 ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
 if Sudo(msg) then 
