@@ -10104,6 +10104,15 @@ send(msg.chat_id_, msg.id_,(help_text or Text))
 return false
 end
 --------------------------------
+if text == "تاك لمطايه" or text == "تاك للمطايه" or text == "تاك للحمير" then
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"✸∫ قائمة زباله 
+≪━━━━━━━━━━━━━≫
+1» الزباله [@IIiIlIiIlI]
+2» الزباله [@CCPHH]","}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
 if text == "تعال خاص" or text == "تعالي خاص" or text == "خاص" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"شحسوون 😱","ها راح تطمسون 😒","واني شنو هنا طرطور 😒"}
