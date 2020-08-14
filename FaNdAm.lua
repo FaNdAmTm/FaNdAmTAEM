@@ -9600,7 +9600,7 @@ Text = [[
 *✸م9 ◂ اوامر مطور الاساسي* 
 *✸م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢ 
+彡 .[FaNdAm Channel](t.me/@XMGXM)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10283,6 +10283,42 @@ if text == "صلاحياتي" then
 if tonumber(msg.reply_to_message_id_) == 0 then 
 Get_Info(msg,msg.chat_id_,msg.sender_user_id_)
 end  
+end
+-------------------
+if text == 'روابط الكروبات' or text == 'روابط المجموعات' then
+if not is_leader(msg) then
+faederdx(msg.chat_id_, msg.id_, 1, '🩸┇ للمطور الاساسي فقط ', 1, 'md')
+else
+local groups = function(extra, result) 
+local num = (faederdx1:scard(FAEDER.."bot:groups"))
+local list = faederdx1:smembers(FAEDER.."bot:groups")
+local text = "~ Groups_Bots_In_the_Bot_Of_Source_Faeder ~ @Faeder_ch\n\n"
+for k,v in pairs(list) do
+local GroupsMonsh = faederdx1:scard(FAEDER.."bot:monsh:"..v) or 0
+local GroupsOwner = faederdx1:scard(FAEDER.."bot:owners:"..v) or 0
+local GroupsMod = faederdx1:scard(FAEDER.."bot:momod:"..v) or 0
+local Groupslink = faederdx1:get(FAEDER.."bot:group:link" ..v)
+if result.first_name_ then
+if #result.first_name_ < 35 then
+else
+for faeder222 in string.gmatch(result.first_name_, "[^%s]+") do
+result.first_name_ = fandam00
+break
+end end end
+text = text..k.."🩸┇ Group ID  : [ "..v.." ]\n🦠┇ Group Link : [ "..(Groupslink or "Not Found").." ]\n🗽┇ Group Monsh  : [ "..GroupsMonsh.." ]\n🗽┇ Group Owners  : [ "..GroupsOwner.." ]\n🦿┇ Group Momods : [ "..GroupsMod.." ] \n➖➖➖➖➖➖➖➖➖➖\n"
+end
+local file = io.open('Groups_Bot.txt', 'w')
+file:write(text)
+file:close()
+local dxx = 'https://api.telegram.org/bot' .. tokenbot .. '/sendDocument'
+local dxxx = 'curl "' .. dxx .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'Groups_Bot.txt' .. '"'
+io.popen(dxxx)
+faederdx(msg.chat_id_, msg.id_, 1, '🦠┇ عزيزي ⌯» *'..result.first_name_..'*\n🗽┇ جاري ارسال نسخه للمجموعات \n🥁┇ تحتوي على *('..num..')* مجموعه\n‏➖➖➖➖➖➖➖➖➖➖➖➖\n', 1, 'md')
+sleep(1.5)
+faederdx(msg.chat_id_, msg.id_, 1, dxxx, 1, 'md')
+end
+getUser(msg.sender_user_id_, groups)
+end
 end
 ------------------------------------------------------------------------
 if text and text:match('^صلاحياته @(.*)') then   
