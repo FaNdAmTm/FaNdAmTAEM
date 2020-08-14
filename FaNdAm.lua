@@ -9655,7 +9655,7 @@ Text = [[
 ✸∫  الجهات
 ✸∫  الاشعارات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9700,7 +9700,7 @@ Text = [[
 ✸∫ اوامر التحشيش
 ✸∫ صورتي
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9738,7 +9738,7 @@ Text = [[
 ✸∫  وصف
 ✸∫  تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9784,7 +9784,7 @@ Text = [[
 ✸∫  امر 
 ✸∫  الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9834,7 +9834,7 @@ Text = [[
 ✸∫  تغير امر الاوامر
 ✸∫  تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9889,7 +9889,7 @@ Text = [[
 ✸∫ الاوامر المضافه
 ✸∫ قائمه المنع
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9948,7 +9948,7 @@ Text = [[
 ✸∫ رفع + تنزيل ← الحاته
 ✸∫ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9980,7 +9980,7 @@ Text = [[
 ✸∫ اذاعه 
 ✸∫ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10063,7 +10063,7 @@ Text = [[
 ✸∫ تنظيف المشتركين
 ✸∫ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10098,7 +10098,7 @@ Text = [[
 ✸∫ شنو رئيك بهاي بالرد
 ✸∫ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/XMGXM)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
