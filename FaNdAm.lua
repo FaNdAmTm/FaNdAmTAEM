@@ -9600,7 +9600,7 @@ Text = [[
 *✸م9 ◂ اوامر مطور الاساسي* 
 *✸م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-彡 .[FaNdAm Channel](t.me/@XMGXM)➢ 
+彡 .[FaNdAm Channel](t.me/XMGXM)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
