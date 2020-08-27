@@ -3381,7 +3381,7 @@ local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
 local TextS = "\n ✸∫ اهلا بك في متجر ملفات فانۨــہدامۘ⁶³\n ✸∫ ملفات السورس ↓\n≪━━━━━━━━━━━━━≫\n\n"
-local TextE = "\n≪━━━━━━━━━━━━━≫\n ✸∫ علامة تعني { ✓ } ملف مفعل\n ✸∫ علامة تعني { ✘ } ملف معطل\n ✸∫ قناة سورس فانۨــہدامۘ⁶³ ↓\n".." ✸∫ [اضغط هنا لدخول](t.me/fandam0) \n"
+local TextE = "\n≪━━━━━━━━━━━━━≫\n ✸∫ علامة تعني { ✓ } ملف مفعل\n ✸∫ علامة تعني { ✘ } ملف معطل\n ✸∫ قناة سورس فانۨــہدامۘ⁶³ ↓\n".." ✸∫ [اضغط هنا لدخول](t.me/XMGXM) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
