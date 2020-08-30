@@ -7968,7 +7968,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,FaNdAm)
-local t = "\nツ قائمة الاعضاء \n≪━━━━━━━━━━━━━≫\n"
+local t = "\n🧼┇ وينكم اخوان  \n≪━━━━━━━━━━━━━≫\n"
 x = 0
 local list = FaNdAm.members_
 for k, v in pairs(list) do
