@@ -144,8 +144,8 @@ print([[
 ┗━━┛━━┗━━━┛┗┛━┗━┛┗━━┛┗┛━┗┛
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-> CH › @fandam0
-> CH › @fandam0
+> CH › @X04XX
+> CH › @X04XX
 ~> DEVELOPER › @Wt_5m
 ]])
 sudos = dofile("./Info.lua") 
@@ -172,7 +172,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,114518657,1216110209,842721206}   
+sudo_users = {SUDO,114518657,}   
 function SudoBot(msg)  
 local FaNdAm = false  
 for k,v in pairs(sudo_users) do  
@@ -259,9 +259,9 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1216110209) then  
+if tonumber(user_id) == tonumber(114518657) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1216110209) then
+elseif tonumber(user_id) == tonumber(114518657) then
 var = 'مبرمج فانۨــہدامۘ⁶³'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -2281,11 +2281,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬FaNdAm TEAM
+ ✸∫ ↬KeViN TEAM
  ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Channel FaNdAm](t.me/fandam0) 
+ ✸∫ ↬[Channel KeViN](t.me/X04XX) 
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Information](t.me/fandam0)
+ ✸∫ ↬[Information](t.me/X04XX)
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
@@ -9588,7 +9588,7 @@ end
 local help_text = database:get(bot_id..'help_text')
 Text = [[
 *✸اهلا انتツفي اوامر البوت✸*
-ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
+ٴ≪━━━━━━𝗞𝗘   𖠜━━━━━━≫ٴ
 *✸م1 ◂ اوامر الحمايه*
 *✸م2 ◂ اوامر تعطيل ~ تفعيل*
 *✸م3 ◂ اوامر ضع ~ اضف*
@@ -9599,8 +9599,8 @@ Text = [[
 *✸م8 ◂ اوامر مطور البوت*
 *✸م9 ◂ اوامر مطور الاساسي* 
 *✸م10 ◂ اوامر الاعضاء*
-ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢ 
+ٴ≪━━━━━━𝗞𝗘   𖠜━━━━━━≫ٴ
+彡 .[KeViN Channel](t.me/fandam0)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9655,7 +9655,7 @@ Text = [[
 ✸∫  الجهات
 ✸∫  الاشعارات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9700,7 +9700,7 @@ Text = [[
 ✸∫ اوامر التحشيش
 ✸∫ صورتي
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9738,7 +9738,7 @@ Text = [[
 ✸∫  وصف
 ✸∫  تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9784,7 +9784,7 @@ Text = [[
 ✸∫  امر 
 ✸∫  الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9834,7 +9834,7 @@ Text = [[
 ✸∫  تغير امر الاوامر
 ✸∫  تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9889,7 +9889,7 @@ Text = [[
 ✸∫ الاوامر المضافه
 ✸∫ قائمه المنع
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9948,7 +9948,7 @@ Text = [[
 ✸∫ رفع + تنزيل ← الحاته
 ✸∫ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9980,7 +9980,7 @@ Text = [[
 ✸∫ اذاعه 
 ✸∫ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10063,7 +10063,7 @@ Text = [[
 ✸∫ تنظيف المشتركين
 ✸∫ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10098,7 +10098,7 @@ Text = [[
 ✸∫ شنو رئيك بهاي بالرد
 ✸∫ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[KeViN Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10142,7 +10142,7 @@ if text == 'رابط الحذف' or text == 'رابط حذف' then
 t =[[
 رابط الحذف في جميع مواقع التواصل ✸
 فكر قبل لا تتسرع وتروح
-ٴ≪━━━━━𝘽𝙆━━━━━≫ٴ
+ٴ≪━━━━━𝗞𝗘   𖠜━━━━━≫ٴ
  ✸ رابط حذف  [Telegram](https://my.telegram.org/auth?to=delete) ܁
  ✸ رابط حذف [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
  ✸ رابط حذف [Facebook](https://www.facebook.com/help/deleteaccount) ܁
