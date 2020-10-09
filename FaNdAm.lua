@@ -144,8 +144,8 @@ print([[
 ┗━━┛━━┗━━━┛┗┛━┗━┛┗━━┛┗┛━┗┛
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-> CH › @fandam0
-> CH › @fandam0
+> CH › @X04XX
+> CH › @X04XX
 ~> DEVELOPER › @Wt_5m
 ]])
 sudos = dofile("./Info.lua") 
@@ -172,7 +172,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,114518657,1216110209,842721206}   
+sudo_users = {SUDO,114518657}   
 function SudoBot(msg)  
 local FaNdAm = false  
 for k,v in pairs(sudo_users) do  
@@ -233,7 +233,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(114518657) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1216110209) then
+elseif tonumber(user_id) == tonumber(114518657) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -259,9 +259,9 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1216110209) then  
+if tonumber(user_id) == tonumber(114518657) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1216110209) then
+elseif tonumber(user_id) == tonumber(114518657) then
 var = 'مبرمج فانۨــہدامۘ⁶³'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -790,7 +790,7 @@ end
 return false
 end
 if SudoBot(msg) then
-local bl = ' ✸∫ اهلا عزيزي آلمـطـور\n ✸∫ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ✸∫ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ✸∫ من خلاال الكيبورت خاص بك\n ✸∫ قناة سورس البوت [اضغط هنا](t.me/fandam0)'
+local bl = ' ✸∫ اهلا عزيزي آلمـطـور\n ✸∫ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ✸∫ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ✸∫ من خلاال الكيبورت خاص بك\n ✸∫ قناة سورس البوت [اضغط هنا](t.me/X04XX)'
 local keyboard = {
 {'الاحصائيات ✸'},
 {'تعطيل التواصل ✸','تفعيل التواصل ✸'},
@@ -2281,11 +2281,11 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬FaNdAm TEAM
+ ✸∫ ↬KiVeN TEAM
  ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Channel FaNdAm](t.me/fandam0) 
+ ✸∫ ↬[Channel KiVeN](t.me/X04XX) 
 ≪━━━━━━━━━━━━━≫
- ✸∫ ↬[Information](t.me/fandam0)
+ ✸∫ ↬[Information](t.me/X04XX)
 ≪━━━━━━━━━━━━━≫
  ✸∫ ↬[DEVELOPER](t.me/Wt_5m)
 ≪━━━━━━━━━━━━━≫
@@ -9600,7 +9600,7 @@ Text = [[
 *✸م9 ◂ اوامر مطور الاساسي* 
 *✸م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢ 
+彡 .[FaNdAm Channel](t.me/X04XX)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9655,7 +9655,7 @@ Text = [[
 ✸∫  الجهات
 ✸∫  الاشعارات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9700,7 +9700,7 @@ Text = [[
 ✸∫ اوامر التحشيش
 ✸∫ صورتي
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9738,7 +9738,7 @@ Text = [[
 ✸∫  وصف
 ✸∫  تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9784,7 +9784,7 @@ Text = [[
 ✸∫  امر 
 ✸∫  الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9834,7 +9834,7 @@ Text = [[
 ✸∫  تغير امر الاوامر
 ✸∫  تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9889,7 +9889,7 @@ Text = [[
 ✸∫ الاوامر المضافه
 ✸∫ قائمه المنع
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9948,7 +9948,7 @@ Text = [[
 ✸∫ رفع + تنزيل ← الحاته
 ✸∫ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9980,7 +9980,7 @@ Text = [[
 ✸∫ اذاعه 
 ✸∫ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10063,7 +10063,7 @@ Text = [[
 ✸∫ تنظيف المشتركين
 ✸∫ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10098,7 +10098,7 @@ Text = [[
 ✸∫ شنو رئيك بهاي بالرد
 ✸∫ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
