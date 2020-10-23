@@ -144,8 +144,8 @@ print([[
 ┗━━┛━━┗━━━┛┗┛━┗━┛┗━━┛┗┛━┗┛
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-> CH › @fandam0
-> CH › @fandam0
+> CH › @X04XX
+> CH › @X04XX
 ~> DEVELOPER › @Wt_5m
 ]])
 sudos = dofile("./Info.lua") 
@@ -172,7 +172,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,114518657,1216110209,842721206}   
+sudo_users = {SUDO,114518657,}   
 function SudoBot(msg)  
 local FaNdAm = false  
 for k,v in pairs(sudo_users) do  
@@ -233,7 +233,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(114518657) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1216110209) then
+elseif tonumber(user_id) == tonumber(114518657) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -259,9 +259,9 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1216110209) then  
+if tonumber(user_id) == tonumber(114518657) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(1216110209) then
+elseif tonumber(user_id) == tonumber(114518657) then
 var = 'مبرمج فانۨــہدامۘ⁶³'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -6900,7 +6900,7 @@ local text =
 ' }\n'..' ⌔︙  الايدي » { '..idgp..
 ' }\n'..' ⌔︙  الايدي بالصوره » { '..idph..
 ' }\n'..' ⌔︙  الرفع » { '..setadd..
-' }\n'..' ⌔︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌔︙  CH » @fandam0\n'
+' }\n'..' ⌔︙  الحظر » { '..banm..' }\n\n┉  ┉  ┉  ┉ ┉  ┉  ┉  ┉  ┉  ┉\n ⌔︙  CH » @X04XX\n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -7032,12 +7032,12 @@ return false
 end
 local link = database:get(bot_id.."Private:Group:Link"..msg.chat_id_)            
 if link then                              
-send(msg.chat_id_,msg.id_,'𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  𖠐\n≪━━━━━━━━━━━━━≫\n ['..link..']')                          
+send(msg.chat_id_,msg.id_,'𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  𖠐\n•━━━━━━━━━━━━━•ٴ\n ['..link..']')                          
 else                
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
 if linkgpp.ok == true then 
 database:set(bot_id.."Private:Group:Link"..msg.chat_id_,linkgpp.result)
-linkgp = '𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  ??\n≪━━━━━━━━━━━━━≫\n ['..linkgpp.result..']'
+linkgp = '𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  ??\n•━━━━━━━━━━━━━•ٴ\n ['..linkgpp.result..']'
 else
 linkgp = ' ⌔︙ لا يوجد رابط ارسل ضع رابط'
 end  
@@ -7250,7 +7250,7 @@ end
 
 if text == "قائمه المنع" and Manager(msg) then   
 local list = database:smembers(bot_id.."FaNdAm1:List:Filter"..msg.chat_id_)  
-t = "\n ⌔︙ قائمة المنع \n≪━━━━━━━━━━━━━≫\n"
+t = "\n ⌔︙ قائمة المنع \n•━━━━━━━━━━━━━•ٴ\n"
 for k,v in pairs(list) do  
 local FaNdAm_Msg = database:get(bot_id.."FaNdAm1:Add:Filter:Rp2"..v..msg.chat_id_)   
 t = t..""..k.."- "..v.." » {"..FaNdAm_Msg.."}\n"    
@@ -7396,7 +7396,7 @@ return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n ⌔︙ قائمة البوتات الموجوده \n≪━━━━━━━━━━━━━≫\n"
+text = "\n ⌔︙ قائمة البوتات الموجوده \n•━━━━━━━━━━━━━•ٴ\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -7415,7 +7415,7 @@ send(msg.chat_id_, msg.id_, " ⌔︙ لا توجد بوتات في الكروب"
 return false 
 end
 if #admins == i then 
-local a = '\n≪━━━━━━━━━━━━━≫\n ⌔︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local a = '\n•━━━━━━━━━━━━━•ٴ\n ⌔︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
 local f = ' ⌔︙ عدد البوتات التي هي ادمن >> {'..t..'}\n ⌔︙ ملاحضه علامة ال (✯) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
@@ -7970,7 +7970,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,FaNdAm)
-local t = "\nツ قائمة الاعضاء \n≪━━━━━━━━━━━━━≫\n"
+local t = "\nツ قائمة الاعضاء \n•━━━━━━━━━━━━━•ٴ\n"
 x = 0
 local list = FaNdAm.members_
 for k, v in pairs(list) do
@@ -8066,7 +8066,7 @@ end
 
 if text == ("ردود المطور") and SudoBot(msg) then 
 local list = database:smembers(bot_id..'List:Rd:Sudo')
-text = "\n ⌔︙ قائمة ردود المطور \n≪━━━━━━━━━━━━━≫\n"
+text = "\n ⌔︙ قائمة ردود المطور \n•━━━━━━━━━━━━━•ٴ\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Sudo:Gif"..v) then
 db = 'متحركه'
@@ -8252,7 +8252,7 @@ end
 
 if text == ("ردود المدير") and Manager(msg) then
 local list = database:smembers(bot_id..'List:Manager'..msg.chat_id_..'')
-text = " ⌔︙ قائمه ردود المدير \n≪━━━━━━━━━━━━━≫\n"
+text = " ⌔︙ قائمه ردود المدير \n•━━━━━━━━━━━━━•ٴ\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = 'متحركه'
@@ -9602,7 +9602,7 @@ Text = [[
 *⌔︙{ م9 } ← اوامر مطور الاساسي* 
 *⌔︙{ م10 } ← اوامر الاعضاء*
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢ 
+彡 .[FaNdAm Channel](t.me/X04XX)➢ 
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9657,7 +9657,7 @@ Text = [[
 ⌔︙  الجهات
 ⌔︙  الاشعارات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9702,7 +9702,7 @@ Text = [[
 ⌔︙ اوامر التحشيش
 ⌔︙ صورتي
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9740,7 +9740,7 @@ Text = [[
 ⌔︙  وصف
 ⌔︙  تكرار + عدد
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9786,7 +9786,7 @@ Text = [[
 ⌔︙  امر 
 ⌔︙  الاوامر المضافه
 •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9836,7 +9836,7 @@ Text = [[
 ⌔︙  تغير امر الاوامر
 ⌔︙  تغير امر م1 ~ الئ م10
  •━━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9891,7 +9891,7 @@ Text = [[
 ⌔︙ الاوامر المضافه
 ⌔︙ قائمه المنع
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9950,7 +9950,7 @@ Text = [[
 ⌔︙ رفع + تنزيل ← الحاته
 ⌔︙ تاك للحاتات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -9982,7 +9982,7 @@ Text = [[
 ⌔︙ اذاعه 
 ⌔︙ ردود المطور 
  •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10065,7 +10065,7 @@ Text = [[
 ⌔︙ تنظيف المشتركين
 ⌔︙ تنظيف الكروبات
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10100,7 +10100,7 @@ Text = [[
 ⌔︙ شنو رئيك بهاي بالرد
 ⌔︙ تحب هذا
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](t.me/fandam0)➢
+彡 .[FaNdAm Channel](t.me/X04XX)➢
 ]]
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
@@ -10144,7 +10144,7 @@ if text == 'رابط الحذف' or text == 'رابط حذف' then
 t =[[
 رابط الحذف في جميع مواقع التواصل ✸
 فكر قبل لا تتسرع وتروح
-ٴ≪━━━━━𝘽𝙆━━━━━≫ٴ
+•━━━━━━━━━━━━━•ٴ
  ✸ رابط حذف  [Telegram](https://my.telegram.org/auth?to=delete) ܁
  ✸ رابط حذف [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
  ✸ رابط حذف [Facebook](https://www.facebook.com/help/deleteaccount) ܁
@@ -10242,7 +10242,7 @@ local Name_Bot = (database:get(bot_id..'Name:Bot') or 'فانۨــہدامۘ⁶
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني 🤓❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
+local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات 🙄', 'ولد زايعته الكاع ??🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير الحب مال اني 🤓❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
