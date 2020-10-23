@@ -2280,17 +2280,18 @@ end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 Text = [[
-≪━━━━━━━━━━━━━≫
- ✸ ↬FaNdAm TEAM
- ≪━━━━━━━━━━━━━≫
- ✸ ↬[Channel FaNdAm](t.me/fandam0) 
-≪━━━━━━━━━━━━━≫
- ✸ ↬[Information](t.me/fandam0)
-≪━━━━━━━━━━━━━≫
- ✸ ↬[DEVELOPER](t.me/Wt_5m)
-≪━━━━━━━━━━━━━≫
- ✸ ↬[To talk to us](t.me/Tsh0bot)
-]]
+⦑ Welcome to Source ⦒
+
+𓂅 .Kevin TEAM 
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+𓂅 . [Source Channel](t.me/X04XX)
+
+𓂅 . [Source Info](t.me/X04XX)      
+
+𓂅 . [Kevin iD](t.me/Wt_5m)     
+ 
+ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+𓂅 . [TWS Kevin](t.me/Tsh0bot)
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
