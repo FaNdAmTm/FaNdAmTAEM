@@ -2292,6 +2292,7 @@ Text = [[
  
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [TWS Kevin](t.me/Tsh0bot)
+]]
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
