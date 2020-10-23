@@ -741,7 +741,7 @@ Chat_Type = 'GroupBot'
 end
 end
 if database:get(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == "الغاء" or text == "الغاء ✸" then   
+if text == "الغاء" or text == "الغاء ⌔︙" then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء الاذاعه")
 database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -792,23 +792,23 @@ end
 if SudoBot(msg) then
 local bl = ' ⌔︙ اهلا عزيزي آلمـطـور\n ⌔︙ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ⌔︙ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ⌔︙ من خلاال الكيبورت خاص بك\n ⌔︙ قناة سورس البوت [اضغط هنا](t.me/fandam0)'
 local keyboard = {
-{'الاحصائيات ✸'},
-{'تعطيل التواصل ✸','تفعيل التواصل ✸'},
-{'ضع اسم للبوت ✸','المطورين ✸','قائمه العام ✸'},
-{'المشتركين ✸','الكروبات ✸'},
-{'ضع كليشه ستارت ✸','حذف كليشه ستارت ✸'},
-{'اذاعه ✸','اذاعه خاص ✸'},
-{'اذاعه بالتثبيت ✸','قائمه الكتم العام ✸'},
-{'تغير رساله الاشتراك','حذف رساله الاشتراك ✸','تغير الاشتراك'},
-{'اذاعه بالتوجيه ✸','اذاعه بالتوجيه خاص ✸'},
-{'تفعيل الاشتراك الاجباري ✸','تعطيل الاشتراك الاجباري ✸'},
-{'الاشتراك الاجباري ✸','وضع قناة الاشتراك ✸'},
-{'تفعيل البوت الخدمي ✸','تعطيل البوت الخدمي ✸'},
-{'تنظيف الكروبات ✸','تنظيف المشتركين ✸'},
-{'جلب نسخه الاحتياطيه ✸'},
-{'تحديث السورس ✸','الاصدار ✸'},
-{'معلومات السيرفر ✸'},
-{'الغاء ✸'},
+{'الاحصائيات ⌔︙'},
+{'تعطيل التواصل ⌔︙','تفعيل التواصل ⌔︙'},
+{'ضع اسم للبوت ⌔︙','المطورين ⌔︙','قائمه العام ⌔︙'},
+{'المشتركين ⌔︙','الكروبات ⌔︙'},
+{'ضع كليشه ستارت ⌔︙','حذف كليشه ستارت ⌔︙'},
+{'اذاعه ⌔︙','اذاعه خاص ⌔︙'},
+{'اذاعه بالتثبيت ⌔︙','قائمه الكتم العام ⌔︙'},
+{'تغير رساله الاشتراك','حذف رساله الاشتراك ⌔︙','تغير الاشتراك'},
+{'اذاعه بالتوجيه ⌔︙','اذاعه بالتوجيه خاص ⌔︙'},
+{'تفعيل الاشتراك الاجباري ⌔︙','تعطيل الاشتراك الاجباري ⌔︙'},
+{'الاشتراك الاجباري ⌔︙','وضع قناة الاشتراك ⌔︙'},
+{'تفعيل البوت الخدمي ⌔︙','تعطيل البوت الخدمي ⌔︙'},
+{'تنظيف الكروبات ⌔︙','تنظيف المشتركين ⌔︙'},
+{'جلب نسخه الاحتياطيه ⌔︙'},
+{'تحديث السورس ⌔︙','الاصدار ⌔︙'},
+{'معلومات السيرفر ⌔︙'},
+{'الغاء ⌔︙'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
 else
@@ -906,7 +906,7 @@ end,nil)
 end,nil)
 end,nil)
 end 
-if text == 'تفعيل التواصل ✸' and SudoBot(msg) then  
+if text == 'تفعيل التواصل ⌔︙' and SudoBot(msg) then  
 if database:get(bot_id..'Tuasl:Bots') then
 database:del(bot_id..'Tuasl:Bots') 
 Text = '\n ⌔︙ تم تفعيل التواصل ' 
@@ -915,7 +915,7 @@ Text = '\n ⌔︙ بالتاكيد تم تفعيل التواصل '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل التواصل ✸' and SudoBot(msg) then  
+if text == 'تعطيل التواصل ⌔︙' and SudoBot(msg) then  
 if not database:get(bot_id..'Tuasl:Bots') then
 database:set(bot_id..'Tuasl:Bots',true) 
 Text = '\n ⌔︙ تم تعطيل التواصل' 
@@ -924,7 +924,7 @@ Text = '\n ⌔︙ بالتاكيد تم تعطيل التواصل'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تفعيل البوت الخدمي ✸' and SudoBot(msg) then  
+if text == 'تفعيل البوت الخدمي ⌔︙' and SudoBot(msg) then  
 if database:get(bot_id..'Free:Bots') then
 database:del(bot_id..'Free:Bots') 
 Text = '\n ⌔︙ تم تفعيل البوت الخدمي ' 
@@ -933,7 +933,7 @@ Text = '\n ⌔︙ بالتاكيد تم تفعيل البوت الخدمي '
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل البوت الخدمي ✸' and SudoBot(msg) then  
+if text == 'تعطيل البوت الخدمي ⌔︙' and SudoBot(msg) then  
 if not database:get(bot_id..'Free:Bots') then
 database:set(bot_id..'Free:Bots',true) 
 Text = '\n ⌔︙ تم تعطيل البوت الخدمي' 
@@ -943,7 +943,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text and database:get(bot_id..'Start:Bots') then
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_,' ⌔︙ الغاء حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
@@ -953,16 +953,16 @@ send(msg.chat_id_, msg.id_,' ⌔︙ تم حفظ كليشه ستارت')
 database:del(bot_id..'Start:Bots') 
 return false
 end
-if text == 'ضع كليشه ستارت ✸' and SudoBot(msg) then 
+if text == 'ضع كليشه ستارت ⌔︙' and SudoBot(msg) then 
 database:set(bot_id..'Start:Bots',true) 
 send(msg.chat_id_, msg.id_,' ⌔︙ ارسل لي الكليشه الان')
 return false
 end
-if text == 'حذف كليشه ستارت ✸' and SudoBot(msg) then 
+if text == 'حذف كليشه ستارت ⌔︙' and SudoBot(msg) then 
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ⌔︙ تم حذف كليشه ستارت')
 end
-if text == 'معلومات السيرفر ✸' and SudoBot(msg) then 
+if text == 'معلومات السيرفر ⌔︙' and SudoBot(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -978,43 +978,43 @@ echo '*———————————~*\n✺✔{ مـده تـشغيـل ال
 ]]):read('*all'))  
 end
 
-if text == 'تحديث السورس ✸' and SudoBot(msg) then 
+if text == 'تحديث السورس ⌔︙' and SudoBot(msg) then 
 os.execute('rm -rf FaNdAm.lua')
 os.execute('wget https://raw.githubusercontent.com/FaNdAmTm/FaNdAmTAEM/master/FaNdAm.lua')
 send(msg.chat_id_, msg.id_,' ⌔︙ تم تحديث السورس \n ⌔︙ لديك اخر اصدار لسورس فانۨــہدامۘ⁶³\n ⌔︙ الاصدار » { 1.3v}')
 dofile('FaNdAm.lua')  
 end
-if text == 'الاصدار ✸' and SudoBot(msg) then 
+if text == 'الاصدار ⌔︙' and SudoBot(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ⌔︙ اصدار سورس فانۨــہدامۘ⁶³ \n ⌔︙ الاصدار »{ 1.3v}')
 end
-if text == "ضع اسم للبوت ✸" and SudoBot(msg) then  
+if text == "ضع اسم للبوت ⌔︙" and SudoBot(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل اليه الاسم الان ")
 return false
 end
-if text == 'الاحصائيات ✸' and SudoBot(msg) then 
+if text == 'الاحصائيات ⌔︙' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' الاحصائيات ✸ \n'..' ⌔︙ عدد الكروبات » {'..Groups..'}'..'\n ⌔︙  عدد المشتركين » {'..Users..'}'
+Text = ' الاحصائيات ⌔︙ \n'..' ⌔︙ عدد الكروبات » {'..Groups..'}'..'\n ⌔︙  عدد المشتركين » {'..Users..'}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'المشتركين ✸' and SudoBot(msg) then 
+if text == 'المشتركين ⌔︙' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n ⌔︙ المشتركين»{`'..Users..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'الكروبات ✸' and SudoBot(msg) then 
+if text == 'الكروبات ⌔︙' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = '\n ⌔︙ الكروبات»{`'..Groups..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == ("المطورين ✸") and SudoBot(msg) then
+if text == ("المطورين ⌔︙") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
 t = "\n ⌔︙ قائمة المطورين \n≪━━━━━━━━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -1030,7 +1030,7 @@ t = " ⌔︙ لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("قائمه العام ✸") and SudoBot(msg) then
+if text == ("قائمه العام ⌔︙") and SudoBot(msg) then
 local list = database:smembers(bot_id..'GBan:User')
 t = "\n ⌔︙ قائمه المحظورين عام \n≪━━━━━━━━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -1047,7 +1047,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("قائمه الكتم العام ✸") and SudoBot(msg) then
+if text == ("قائمه الكتم العام ⌔︙") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
 t = "\n ⌔︙ قائمة المكتومين عام \n≪━━━━━━━━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -1064,35 +1064,35 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text=="اذاعه خاص ✸" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text=="اذاعه خاص ⌔︙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 database:setex(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل الان اذاعتك؟ \n ⌔︙ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه ✸" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text=="اذاعه ⌔︙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 database:setex(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل الان اذاعتك؟ \n ⌔︙ للخروج ارسل الغاء ")
 return false
 end  
-if text=="اذاعه بالتثبيت ✸" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
+if text=="اذاعه بالتثبيت ⌔︙" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل الان اذاعتك؟ \n ⌔︙ للخروج ارسل الغاء ")
 return false
 end 
-if text=="اذاعه بالتوجيه ✸" and msg.reply_to_message_id_ == 0  and SudoBot(msg) then 
+if text=="اذاعه بالتوجيه ⌔︙" and msg.reply_to_message_id_ == 0  and SudoBot(msg) then 
 database:setex(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل لي التوجيه الان")
 return false
 end 
-if text=="اذاعه بالتوجيه خاص ✸" and msg.reply_to_message_id_ == 0  and SudoBot(msg) then 
+if text=="اذاعه بالتوجيه خاص ⌔︙" and msg.reply_to_message_id_ == 0  and SudoBot(msg) then 
 database:setex(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," ⌔︙ ارسل لي التوجيه الان")
 return false
 end 
-if text == 'جلب نسخه الاحتياطيه ✸' and SudoBot(msg) then 
+if text == 'جلب نسخه الاحتياطيه ⌔︙' and SudoBot(msg) then 
 GetFile_Bot(msg)
 end
-if text == "تنظيف المشتركين ✸" and SudoBot(msg) then 
+if text == "تنظيف المشتركين ⌔︙" and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1128,7 +1128,7 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الكروبات ✸" and SudoBot(msg) then 
+if text == "تنظيف الكروبات ⌔︙" and SudoBot(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1302,7 +1302,7 @@ end,nil)
 end
 end
 if database:get(bot_id..'Set:Name:Bot'..msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء حفظ اسم البوت")
 database:del(bot_id..'Set:Name:Bot'..msg.sender_user_id_) 
 return false  
@@ -1313,7 +1313,7 @@ send(msg.chat_id_, msg.id_, " ⌔︙ تم حفظ الاسم")
 return false
 end 
 if database:get(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء الاذاعه للخاص")
 database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1346,7 +1346,7 @@ database:del(bot_id.."Send:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_)
 end
 
 if database:get(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
@@ -1379,7 +1379,7 @@ database:del(bot_id.."Send:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_i
 end
 
 if database:get(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -1399,7 +1399,7 @@ database:del(bot_id.."Send:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_
 end 
 end
 if database:get(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
-if text == 'الغاء' or text == 'الغاء ✸' then   
+if text == 'الغاء' or text == 'الغاء ⌔︙' then   
 send(msg.chat_id_, msg.id_," ⌔︙ تم الغاء الاذاعه")
 database:del(bot_id.."Send:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
@@ -2242,17 +2242,17 @@ database:setex(bot_id.."textch:user" .. msg.chat_id_ .. "" .. msg.sender_user_id
 send(msg.chat_id_, msg.id_, ' ⌔︙ حسنآ ارسل لي النص الذي تريده')
 return false  
 end
-if text == "حذف رساله الاشتراك ✸" and SudoBot(msg) then  
+if text == "حذف رساله الاشتراك ⌔︙" and SudoBot(msg) then  
 database:del(bot_id..'text:ch:user')
 send(msg.chat_id_, msg.id_, " ⌔︙ تم مسح رساله الاشتراك ")
 return false  
 end
-if text and text:match("^وضع قناة الاشتراك ✸$") and SudoBot(msg) then  
+if text and text:match("^وضع قناة الاشتراك ⌔︙$") and SudoBot(msg) then  
 database:setex(bot_id.."add:ch:jm" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 360, true)  
 send(msg.chat_id_, msg.id_, ' ⌔︙ حسنآ ارسل لي معرف القناة')
 return false  
 end
-if text == "تفعيل الاشتراك الاجباري ✸" and SudoBot(msg) then  
+if text == "تفعيل الاشتراك الاجباري ⌔︙" and SudoBot(msg) then  
 if database:get(bot_id..'add:ch:id') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_," ⌔︙ الاشتراك الاجباري مفعل \n ⌔︙ على القناة » ["..addchusername.."]")
@@ -2262,13 +2262,13 @@ send(msg.chat_id_, msg.id_," ⌔︙ اهلا عزيزي المطور \n ⌔︙ �
 end
 return false  
 end
-if text == "تعطيل الاشتراك الاجباري ✸" and SudoBot(msg) then  
+if text == "تعطيل الاشتراك الاجباري ⌔︙" and SudoBot(msg) then  
 database:del(bot_id..'add:ch:id')
 database:del(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " ⌔︙ تم تعطيل الاشتراك الاجباري ")
 return false  
 end
-if text == "الاشتراك الاجباري ✸" and SudoBot(msg) then  
+if text == "الاشتراك الاجباري ⌔︙" and SudoBot(msg) then  
 if database:get(bot_id..'add:ch:username') then
 local addchusername = database:get(bot_id..'add:ch:username')
 send(msg.chat_id_, msg.id_, " ⌔︙ تم تفعيل الاشتراك الاجباري \n ⌔︙ على القناة » ["..addchusername.."]")
@@ -8447,7 +8447,7 @@ if text == 'الاحصائيات' then
 if Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' الاحصائيات ✸ \n'..' ⌔︙ عدد الكروبات » {'..Groups..'}'..'\n ⌔︙  عدد المشتركين » {'..Users..'}'
+Text = ' الاحصائيات ⌔︙ \n'..' ⌔︙ عدد الكروبات » {'..Groups..'}'..'\n ⌔︙  عدد المشتركين » {'..Users..'}'
 send(msg.chat_id_, msg.id_,Text) 
 end
 return false
@@ -9587,18 +9587,18 @@ return false
 end
 local help_text = database:get(bot_id..'help_text')
 Text = [[
-*✸اهلا انتツفي اوامر البوت✸*
+*⌔︙اهلا انتツفي اوامر البوت⌔︙*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
-*✸م1 ◂ اوامر الحمايه*
-*✸م2 ◂ اوامر تعطيل ~ تفعيل*
-*✸م3 ◂ اوامر ضع ~ اضف*
-*✸م4 ◂ اوامر مسح ~ حذف*
-*✸م5 ◂ اوامر تنزيل+رفع+التغير*
-*✸م6 ◂ اوامر الكروب*
-*✸م7 ◂ اوامر التحشيش*
-*✸م8 ◂ اوامر مطور البوت*
-*✸م9 ◂ اوامر مطور الاساسي* 
-*✸م10 ◂ اوامر الاعضاء*
+*⌔︙م1 ◂ اوامر الحمايه*
+*⌔︙م2 ◂ اوامر تعطيل ~ تفعيل*
+*⌔︙م3 ◂ اوامر ضع ~ اضف*
+*⌔︙م4 ◂ اوامر مسح ~ حذف*
+*⌔︙م5 ◂ اوامر تنزيل+رفع+التغير*
+*⌔︙م6 ◂ اوامر الكروب*
+*⌔︙م7 ◂ اوامر التحشيش*
+*⌔︙م8 ◂ اوامر مطور البوت*
+*⌔︙م9 ◂ اوامر مطور الاساسي* 
+*⌔︙م10 ◂ اوامر الاعضاء*
 ٴ≪━━━━━━𝘽𝙆━━━━━━≫ٴ
 彡 .[FaNdAm Channel](t.me/fandam0)➢ 
 ]]
@@ -10140,13 +10140,13 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'رابط الحذف' or text == 'رابط حذف' then
 t =[[
-رابط الحذف في جميع مواقع التواصل ✸
+رابط الحذف في جميع مواقع التواصل ⌔︙
 فكر قبل لا تتسرع وتروح
 ٴ≪━━━━━𝘽𝙆━━━━━≫ٴ
- ✸ رابط حذف  [Telegram](https://my.telegram.org/auth?to=delete) ܁
- ✸ رابط حذف [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
- ✸ رابط حذف [Facebook](https://www.facebook.com/help/deleteaccount) ܁
- ✸ رابط حذف [Snspchat](https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount) ܁
+ ⌔︙ رابط حذف  [Telegram](https://my.telegram.org/auth?to=delete) ܁
+ ⌔︙ رابط حذف [instagram](https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/) ܁
+ ⌔︙ رابط حذف [Facebook](https://www.facebook.com/help/deleteaccount) ܁
+ ⌔︙ رابط حذف [Snspchat](https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount) ܁
 ]]
 send(msg.chat_id_, msg.id_,t) 
 return false
